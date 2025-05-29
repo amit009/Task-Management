@@ -7,7 +7,8 @@
 
     <h2 class="text-2xl font-semibold mb-4">Add New Task</h2>
     <form wire:submit.prevent="save">
-        <input type="text" wire:model.defer="title" placeholder="Title" class="border p-1 mb-2 w-full">
+        <input type="text" wire:model.defer="title" placeholder="Title" class="border p-1 mb-2 w-full @error('title') border-red-600 @enderror"">
+        <p>@error('title')<small class="error">{{$message}}</small>@enderror</p>
         <textarea wire:model.defer="description" placeholder="Description" class="border p-1 mb-2 w-full"></textarea>
         <select wire:model.defer="project_id" class="border p-2 mb-2 w-full rounded">
             <option value="">Select Project</option>
