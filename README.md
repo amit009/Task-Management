@@ -11,6 +11,6 @@
 
 <h3>Login Credentials</h3>
 <ul>
-  <li>username: admin</li>
+  <li>username: amitrkumar715@gmail.com</li>
   <li>password: Task@123456</li>
 </ul>  
